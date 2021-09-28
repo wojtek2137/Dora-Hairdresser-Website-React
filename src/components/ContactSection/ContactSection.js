@@ -3,6 +3,7 @@ import facebookicon from "./facebook-icon.png";
 import adressicon from "./adress-icon.png";
 import phoneicon from "./phone-icon.png";
 import emailicon from "./email-icon.png";
+import ContactForm from "./ContactForm/ContactForm";
 const ContactSection = () => {
   return (
     <section id="contact">
@@ -18,39 +19,7 @@ const ContactSection = () => {
         <h4>
           Napisz <br /> do mnie
         </h4>
-        <div className="form">
-          <form id="contact-form" method="post" action="">
-            <input
-              name="name"
-              type="text"
-              className="form-control"
-              placeholder="Imię"
-              required
-            />
-            <br />
-            <input
-              name="email"
-              type="text"
-              className="form-control"
-              placeholder="E-mail"
-              required
-            />
-            <br />
-            <textarea
-              name="message"
-              className="form-control"
-              placeholder="Wiadomość"
-              rows="4"
-              required
-            ></textarea>
-            <br />
-            <input
-              type="submit"
-              className="form-control submit"
-              value="Wyślij"
-            />
-          </form>
-        </div>
+        <ContactForm />
       </div>
       <div className="tile3">
         <h4>
