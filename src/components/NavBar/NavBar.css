@@ -1,0 +1,103 @@
+.nav {
+  background: transparent;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: fixed;
+}
+.nav.scrolled {
+  background-color: #0000004b;
+  transition: background 500ms;
+}
+.nav-brand {
+  text-align: right;
+  color: white;
+  text-decoration: none;
+  line-height: 60px;
+  margin: 0 0 0 25px;
+  font-size: 2.2em;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: "Gloria Hallelujah", cursive;
+}
+.nav-brand-club {
+  font-family: sans-serif;
+  margin-right: 10px;
+  font-size: 0.7em;
+}
+
+.nav-headers {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.nav ul {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 50px;
+}
+.nav li {
+  margin: 0 15px;
+}
+
+.nav li a {
+  font-family: "Montserrat", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.1em;
+  font-weight: 200;
+}
+.nav li a:hover {
+  color: rgb(226, 225, 132);
+  transition: 0.2s ease-in-out;
+}
+#nav-kontakt {
+  position: absolute;
+  right: 8px;
+}
+
+/* RESPONSIVENNES */
+
+@media (max-width: 767.98px) {
+  .nav-headers {
+    display: none;
+  }
+  .nav-headers.active {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #1b1b1aee;
+    justify-content: center;
+    align-items: center;
+    z-index: 0.5;
+  }
+  .nav-headers.active ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .nav-headers.active ul li {
+    margin: auto;
+    padding: 30px;
+  }
+  .nav-headers.active ul #nav-kontakt {
+    position: inherit;
+  }
+  .nav-headers.active ul li a:hover {
+    color: rgb(160, 160, 160);
+  }
+
+  .nav-headers.active ul li a {
+    font-size: 1.6em;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+}

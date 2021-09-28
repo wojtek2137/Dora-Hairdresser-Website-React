@@ -1,0 +1,139 @@
+#contact {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+#contact div {
+  padding: 20px 0;
+}
+#contact .tile1 {
+  background: #ccb379b9;
+  width: 100%;
+  text-align: center;
+}
+.tile1 img {
+  width: 300px;
+  height: 300px;
+  margin: 40px 0 10px 0;
+}
+.tile1 img:hover {
+  filter: invert(0.1);
+}
+.tile1 h4 {
+  padding-bottom: 10px;
+  font-size: 2em;
+  color: #ffffff;
+  margin: 0 0 0 20px;
+  font-weight: 100;
+}
+#contact .tile2 {
+  background: #e4dcbb;
+  width: 100%;
+  text-align: center;
+}
+.tile2 h4 {
+  padding-bottom: 10px;
+  font-size: 2em;
+  color: #bea261;
+  margin: 0 0 0 20px;
+  font-weight: 100;
+}
+form {
+  padding: 50px;
+  transition: all 2s ease-in-out;
+  text-align: center;
+}
+.form-control {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ccb379b9;
+  color: rgb(19, 19, 19);
+  font-size: 18px;
+  margin-bottom: 16px;
+  justify-content: center;
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ccb379;
+}
+input {
+  height: 45px;
+}
+form .submit {
+  background: #ccb379b9;
+  border-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+  width: 50%;
+}
+form .submit:hover {
+  background-color: #ac8f4bb9;
+  -webkit-transition: background 0.6s 0s ease-in-out;
+  -moz-transition: background 0.6s 0s ease-in-out;
+  -o-transition: background 0.6s 0s ease-in-out;
+  transition: background 0.6s 0s ease-in-out;
+  cursor: pointer;
+}
+#contact .tile3 {
+  background: #ded3ac;
+  width: 100%;
+  text-align: center;
+}
+.tile3 h4 {
+  font-size: 2em;
+  color: #ffffff;
+  margin: 0 0 0 20px;
+  font-weight: 100;
+}
+.tile3 ul {
+  list-style: none;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80%;
+}
+.tile3 ul li {
+  color: #fff;
+  text-align: left;
+  font-size: 1.8em;
+  padding-bottom: 10px;
+}
+.tile3 ul li p {
+  font-size: 0.8em;
+  font-weight: 100;
+  color: #ac8f4b;
+}
+.tile3 ul li img {
+  width: 40px;
+  height: 40px;
+  padding-top: 3px;
+  margin-right: 10px;
+  filter: invert(1);
+}
+
+@media (max-width: 575.98px) {
+  .tile1 img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (max-width: 767.98px) {
+  .tile3 ul {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #contact {
+    flex-wrap: wrap;
+  }
+}

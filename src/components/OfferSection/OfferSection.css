@@ -1,0 +1,40 @@
+#oferta {
+  background-image: radial-gradient(
+      circle,
+      rgba(107, 100, 61, 0.315) 0%,
+      rgba(0, 0, 0, 0.76) 100%
+    ),
+    url("OfferSection.jpg");
+  height: auto;
+  max-height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+h2.nav-brand {
+  font-size: 5.5em;
+  text-align: center;
+  margin: 50px 20px 30px;
+}
+#oferta h3 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 3em;
+  color: #ffffff;
+  letter-spacing: 5px;
+}
+
+@media (max-width: 575.98px) {
+  h2.nav-brand {
+    font-size: 3.5em;
+    text-align: center;
+    margin: 50px 0 30px;
+  }
+
+  #oferta h3 {
+    font-size: 2.5em;
+  }
+}

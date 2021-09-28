@@ -1,0 +1,77 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 350px;
+  background-color: rgba(209, 219, 219, 0.151);
+  margin: 15px;
+  border-radius: 10px;
+  align-items: center;
+}
+.card h4 {
+  text-align: center;
+  color: #1b1b1a;
+  font-size: 1.8em;
+  margin-bottom: 5px;
+}
+h4.long {
+  font-size: 1.5em;
+  margin: 32px 30px 5px 30px;
+}
+img.img-long {
+  margin-bottom: 22px !important;
+}
+.card .btn-hover {
+  display: none;
+}
+.card button {
+  padding: 10px 10px;
+  width: 100%;
+  color: white;
+  background: rgba(214, 200, 124, 0.527);
+  font-size: 1.2em;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.card img {
+  width: 128px;
+  height: 128px;
+  margin: 20px 0 40px;
+}
+.card:hover {
+  /* background-image: radial-gradient(circle, rgb(214, 200, 124) 0%, rgba(0, 0, 0, 0.753) 100%), url("../images/gold.jpg"); */
+  background: #25252375;
+  transition: 0.5s;
+}
+.card:hover h4 {
+  color: #fff;
+  transition: 0.5s;
+}
+
+.card:hover img {
+  filter: invert(1);
+  transition: 0.5s;
+}
+
+.card:hover button {
+  display: none;
+}
+
+.card:hover .btn-hover {
+  font-family: "Berkshire Swash", cursive;
+  display: inline;
+  background: transparent;
+  color: rgb(214, 200, 124);
+  font-weight: 100;
+  transition: 0.5s ease-in-out;
+  letter-spacing: 2px;
+  font-size: 1.8em;
+}
+
+@media (max-width: 767.98px) {
+  .card {
+    margin: 15px 0;
+  }
+}
