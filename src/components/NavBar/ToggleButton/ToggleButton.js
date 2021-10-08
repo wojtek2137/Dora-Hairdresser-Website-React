@@ -4,7 +4,7 @@ const ToggleButton = (props) => {
     return (
         <button
             className="toggle-button"
-            onClick={props.toggleButton}
+            onClick={props.toggleBtn}
         >
             <span className="bar"></span>
             <span className="bar"></span>

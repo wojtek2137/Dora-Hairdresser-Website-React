@@ -8,14 +8,10 @@ import MapFooter from "./components/Map&Footer/MapFooter";
 
 function App() {
 
-  const toggleButtonFunc = () => {
-    const links = document.querySelector(".nav-headers");
-    return links.classList.toggle("active");
-  }
 
   return (
     <div>
-      <NavBar toggle={toggleButtonFunc} />
+      <NavBar />
       <HeaderSection />
       <AboutSection />
       <OfferSection />

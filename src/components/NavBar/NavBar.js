@@ -4,6 +4,7 @@ import ToggleButton from "./ToggleButton/ToggleButton";
 
 const NavBar = (props) => {
   const [navbar, SetNavbar] = useState(false);
+  const [buttonToggled, SetButton] = useState(false);
 
   const changeBackground = () => {
     if (window.scrollY >= 60) {
@@ -13,15 +14,20 @@ const NavBar = (props) => {
     }
   }
   window.addEventListener("scroll", changeBackground);
+
+  const toggle = () => {
+    buttonToggled ? SetButton(false) : SetButton(true);
+  }
+
   return (
     <nav className={navbar ? "nav scrolled" : "nav"}>
       <a className="nav-brand" href="#header">
         <span className="nav-brand-club">KLUB</span>DORA...
       </a>
-      <ToggleButton toggleButton={props.toggle} />
+      <ToggleButton toggleBtn={toggle} />
       <div
-        className="nav-headers"
-        onClick={props.toggle}
+        className={buttonToggled ? "nav-headers active" : "nav-headers"}
+        onClick={toggle}
       >
         <ul>
           <li>
